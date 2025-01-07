@@ -1,5 +1,9 @@
+USE POLICE
+
+go
+
 CREATE TABLE Incidents (
-    IncidentID INT PRIMARY KEY AUTO_INCREMENT,
+    IncidentID INT IDENTITY (1,1) PRIMARY KEY,
     IncidentDateTime DATETIME NOT NULL,
     CrimeType VARCHAR(255) NOT NULL,
     Status VARCHAR(100) NOT NULL,
